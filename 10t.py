@@ -9,12 +9,10 @@ one_count = 0
 for i in count:
     if not 0 <= i <= 1:
         exit('пожалуста, после запуска программы не надо вводить числа больше одного или числа меньше нуля, программа не работает с такими данными')
-    if count[i] == 0:
+    if i == 0:
         zero_count += 1
-        print(f'нулей - {zero_count}')
-    elif count[i] == 1:
+    elif i == 1:
         one_count += 1
-        print(f'единиц - {one_count}')
 if zero_count <= one_count:
     print(f'минимальное количество монеток, которые надо перевернуть, чтобы все монетки лежали одной стороной {zero_count}')
 if zero_count >= one_count:
